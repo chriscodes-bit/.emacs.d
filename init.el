@@ -20,8 +20,8 @@
 (add-hook 'racket-mode 'rainbow-delimiters-hook)
 
 (global-company-mode 1)
+(smartparens-global-mode 1)
 
-(smartparens-mode 1)
 (use-package evil
   :ensure t
   :init
