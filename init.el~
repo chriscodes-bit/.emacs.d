@@ -1,0 +1,18 @@
+(require 'package)
+(add-to-list 'package-archives
+	     '("melpa" . "https//melpa.org/packages/")
+	     t)
+(package-initialize)
+
+;;; MacOS Stuff
+(when (memq window-system '(mac ns)) ; MacOS inherit Shell Paths
+  (exec-path-from-shell-initialize))
+;; MacOS Meta-Key
+(setq mac-option-key-is-meta nil
+      mac-command-key-is-meta t
+      mac-command-modifier 'meta
+      mac-option-modifier 'none)
+
+;;; FONT
+(add-to-list 'default-frame-alist
+	     '(font . "JetBrains Mono-15"))
