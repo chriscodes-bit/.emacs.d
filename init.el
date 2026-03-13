@@ -10,7 +10,7 @@
 (scroll-bar-mode 0)
 
 ;;; MacOS Stuff
-(when (memq window-system '(mac ns)) ; MacOS inherit Shell Paths
+(when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 ;; MacOS Meta-Key
 (setq mac-option-key-is-meta nil
