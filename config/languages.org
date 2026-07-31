@@ -1,0 +1,10 @@
+#+PROPERTY: header-args:emacs-lisp :tangle yes
+#+title: Languages
+
+* Forth
+
+#+begin_src emacs-lisp
+      (use-package forth-mode
+    	   :custom
+  	   (forth-indent-level 4))
+#+end_src
