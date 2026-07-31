@@ -9,3 +9,7 @@
 
 ;; Disable lock files like .#file.txt
 (setq create-lockfiles nil)
+
+(setq mac-command-modifier    'meta
+    mac-option-modifier       'alt
+    mac-right-option-modifier 'alt)

@@ -21,3 +21,11 @@
   ;; Disable lock files like .#file.txt
   (setq create-lockfiles nil)
 #+end_src
+
+* MacOS Meta-Key
+
+#+begin_src emacs-lisp
+  (setq mac-command-modifier    'meta
+      mac-option-modifier       'alt
+      mac-right-option-modifier 'alt)
+#+end_src
